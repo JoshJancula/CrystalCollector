@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CrystalCollector</title>
+	<!-- Added link to the jQuery Library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Added a link to Bootstrap-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+	<!-- put a jumbotron here -->
+	<div class="jumbotron">
+		<h1 class="text-center">Crystal Collector</h1>
+		<h3 class="text-center">tell user how to play the game</h3>
+	</div>
+
+	<!-- this will have our main game -->
+	<div class="container">
+
+		<div class="row">
+			
+
+			<!-- hods your current result -->
+			<div class="col-md-7">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Your Score so Far is</h3>
+					</div>
+					<div class="panel-body">
+						<h1 id="currentTally"></h1>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2">
+			</div>
+
+
+			<!-- holds the scoreboard and the number the most recent number to be matched -->
+			<div class="col-md-3">
+				<div class="row">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">Current Number to Match</h3>
+						</div>
+
+						<div class="panel-body">
+							<h1 id="currentNumber"></h1>
+						</div>
+					</div>
+				</div>
+
+
+				<!-- contains the score -->
+				<div class="row">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<h1 id="scoreBoard"></h1>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- Gems go here -->
+			<div class="row" id="Gems">
+				<div class="col-md-4">
+				</div>
+				<div class="col-md-4">
+				<div class="row">	
+					<button id="button-0" class="btn btn-primary number" value="0"></button>
+					<button id="button-1" class="btn btn-primary number" value="1"></button>
+				</div>
+				<div class="row">
+					<button id="button-2" class="btn btn-primary number" value="2"></button>
+					<button id="button-3" class="btn btn-primary number" value="3"></button>
+				</div>
+			</div>
+				<div class="col-md-4">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row" id="footer">
+			Copyright &copy; 2016 Josh Jancula
+			<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+		</div>
+
+
+		<script type="text/javascript" src="javascript.js"></script>
+
+	</body>
+	</html>
