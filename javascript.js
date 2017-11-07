@@ -7,23 +7,24 @@ var currentTally = 0;
 var wins = 0;
 var losses = 0;
 var currentNumber;
-var gemValues = [];
-
-
-}
+var gemValue = [];
 
 // create a reset function for the game
 function resetGame() {
 	// set the computerNumber to random number between 19 and 120 inclusive
 	currentNumber = Math.floor(Math.random() * (120-19+1)) + 19;
-	// set the buttons to unique random values between 1 and 12 inclusive
-
+	$("#currentNumber").text(currentNumber);
 	gemValues = [];
 	var currentValue;
+	currentTally = 0;
 
-  // First, generate 4 random values in the 1-10 range
+// Make sure game is win-able, by having at least 1 odd number
+
+  gemValue[0] = (Math.floor(Math.random() * 6) * 2) + 1;
+
+  // First, generate 4 random values in the 1-12 range
   while(gemValues.length < 4) {
-  	currentValue = Math.floor(Math.random() * 9) + 1;
+  	currentValue = Math.floor(Math.random() * 12) + 1;
 
     // Avoid duplicates
     if(gemValues.indexOf(currentValue) < 0) {
@@ -31,6 +32,7 @@ function resetGame() {
     }
 
     score();
+}
 }
 
 // start the game 
@@ -42,6 +44,7 @@ function score() {
 	var scoreBoard = 
 	"<p>Wins: " + wins + "</p>" +
 	"<p>Losses: " + losses + "</p>";
+	$("#scoreBoard").html(scoreBoard);
 
 }
 
@@ -49,7 +52,21 @@ function score() {
   $(".gem").on("click", function() {
   	var buttonPressed = this.value;
   	currentTally += gemValues[buttonPressed];
-  	 $("#currentTally").text(currentTally);
-
+  	
+  	if (currentTally === currentNumber) {
+  		wins++;
+  		alert("You Won");
+  		resetGame();
+  	}
+  	else if (currentTally > currentNumber) {
+  		losses++;
+  		alert("You Suck");
+  		resetGame();
+  	}
+  	$("#currentTally").text(currentTally);
   });
 
+
+
+
+});
