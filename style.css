@@ -1,8 +1,3 @@
-html {
-	height: 100%;
-}
-
-
 
 .panel-heading {
 	text-align: center;
@@ -10,13 +5,15 @@ html {
 }
 
 .jumbotron {
-	background-image: url("images/triangular_@2X.png");
+	/*background-image: url("images/triangular_@2X.png");*/
+	background-color: black;
+	color: #BAC0CB;
 }
 
 
 body {
-	background-image: url("images/pixel_weave_@2X.png");
-
+	height: 100%;
+	background-color: black;
 }
 
 
@@ -27,8 +24,7 @@ body {
   color: #fff;
   color: #ccc;
   text-align: center;
-  background: #666;
-  border-top: 8px solid #4aaaa5;
+  background: black;
 }
 
 
@@ -44,35 +40,41 @@ body {
 
 button {
 	display: inline-block;
+	margin: 4%;
 }
 
  
 
 #button-0 {
 	 background-image: url("images/slot-machine.png");
-	 height: 130px;
-	 width: 130px;
+	 
+	 height: 220px;
+	 width: 220px;
+	 background-size: cover;
 
 }
 
 #button-1 {
 	 background-image: url("images/gemstone (2).png");
-	 height: 130px;
-	 width: 130px;
-
+	 height: 220px;
+	 width: 220px;
+	 background-size: cover;
 }
 
 #button-2 {
 	 background-image: url("images/precious-stone.png");
-	 height: 130px;
-	 width: 130px;
+	 height: 220px;
+	 width: 220px;
+	 background-size: cover;
 
 }
 
 #button-3 {
 	 background-image: url("images/precious-stone (1).png");
-	 height: 130px;
-	 width: 130px;
-
+	 height: 220px;
+	 width: 220px;
+	 background-size: cover;
 }
+
+
 

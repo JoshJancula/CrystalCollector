@@ -14,6 +14,7 @@
 
 <body>
 
+<div class="container">
 
 	<!-- put a jumbotron here -->
 	<div class="jumbotron">
@@ -24,32 +25,28 @@
 	</div>
 
 	<!-- this will have our main game -->
-	<div class="container">
+	
 
 		<div class="row">
 			
+			<div class="col-md-4">
 
-			<!-- holds your current result -->
-			<div class="col-md-7">
-				<div class="panel panel-default">
+				<!-- holds your current result -->
+			<div class="row">
+				<div class="panel panel-primary">
 					<div class="panel-heading">
-						<h3 class="panel-title">Your Score so Far is</h3>
+						<h3>Your Score so Far is</h3>
 					</div>
 					<div class="panel-body">
 						<h1 id="currentTally"></h1>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-2">
-			</div>
 
-
-			<!-- holds the scoreboard and the number the most recent number to be matched -->
-			<div class="col-md-3">
 				<div class="row">
-					<div class="panel panel-default">
+					<div class="panel panel-primary">
 						<div class="panel-heading">
-							<h3 class="panel-title">Current Number to Match</h3>
+							<h3>Current Number to Match</h3>
 						</div>
 
 						<div class="panel-body">
@@ -61,7 +58,7 @@
 
 				<!-- contains the score -->
 				<div class="row">
-					<div class="panel panel-default">
+					<div class="panel panel-primary">
 						<div class="panel-body">
 							<h1 id="scoreBoard"></h1>
 						</div>
@@ -69,26 +66,42 @@
 				</div>
 			</div>
 
+			
+			
 
-			<!-- Gems go here -->
+
+			<div class="col-md-2">
+			</div>
+			
+			
+
+			<!-- holds the scoreboard and the number the most recent number to be matched -->
+			<div class="col-md-6">
+						<!-- Gems go here -->
 			<div class="row" id="Gems">
-				<div class="col-md-4">
-				</div>
-				<div class="col-md-4">
-				<div class="row">	
+				<div class="col-md-6">
+				<!-- <div class="row">	 -->
 					<button id="button-0" class="btn btn-primary gem" value="0"></button>
+				<!-- </div> -->
+				<!-- <div class="row"> -->
 					<button id="button-1" class="btn btn-primary gem" value="1"></button>
+				<!-- </div> -->
 				</div>
-				<div class="row">
+				<div class="col-md-6">
+				<!-- <div class="row"> -->
 					<button id="button-2" class="btn btn-primary gem" value="2"></button>
+				<!-- </div> -->
+				<!-- <div class="row"> -->
 					<button id="button-3" class="btn btn-primary gem" value="3"></button>
+				<!-- </div> -->
 				</div>
 			</div>
-				<div class="col-md-4">
-				</div>
 			</div>
+
+
 		</div>
-	</div>
+		</div>
+	<!-- </div> -->
 
 	<div class="container-fluid">
 		<footer>
